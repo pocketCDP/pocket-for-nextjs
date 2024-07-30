@@ -1,6 +1,6 @@
 // Modify global window object
 
-import { WindowWithPocket } from "./src/types";
+import { WindowWithPocket } from "./types";
 
 declare global {
   interface Window extends WindowWithPocket {}

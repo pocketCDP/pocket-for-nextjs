@@ -39,7 +39,6 @@ const config = [
         ],
       }),
       typescript({
-        declarationDir: "dist",
         exclude: [
           "**/__tests__",
           "**/*.test.ts",
