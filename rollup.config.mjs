@@ -17,7 +17,7 @@ const config = [
       {
         dir: pkg.module,
         format: "esm",
-        sourcemap: false,
+        sourcemap: true,
         preserveModules: true,
         preserveModulesRoot: "src",
       },

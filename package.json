@@ -1,6 +1,6 @@
 {
   "name": "@pocketcdp/pocket-for-nextjs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "pocketCDP Nextjs Utility",
   "main": "dist/index.js",
   "module": "dist",
@@ -92,8 +92,8 @@
     "*.{md,html}": "prettier --write"
   },
   "dependencies": {
-    "cookies-next": "^4.2.1",
-    "node-fetch": "^3.3.2"
+    "@pocketcdp/pocket-for-node": "^1.0.4",
+    "cookies-next": "^4.2.1"
   },
   "engines": {
     "node": ">=16 < 19"
