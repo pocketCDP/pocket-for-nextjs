@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2015",
+    "lib": ["es6", "dom", "ES2021.String"],
+    "sourceMap": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "baseUrl": "src/",
+    "skipLibCheck": true,
+
+    // Ensure that .d.ts files are created by tsc, but not .js files
+    // "declaration": true,
+    // "emitDeclarationOnly": true,
+    // Ensure that Babel can safely transpile files in the TypeScript project
+    "isolatedModules": true
+  },
+  "types": ["vitest/globals"],
+
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "**/__tests__"
+  ]
+}

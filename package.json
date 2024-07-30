@@ -1,0 +1,101 @@
+{
+  "name": "@pocketcdp/pocket-for-nextjs",
+  "version": "0.0.2",
+  "description": "pocketCDP Nextjs Utility",
+  "main": "dist/index.js",
+  "module": "dist",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "outputDir": "./dist",
+  "scripts": {
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "npx prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "pocketCDP migueldf10"
+  ],
+  "author": "migueldf10",
+  "license": "PRIVATE",
+  "bugs": {
+    "url": "https://github.com/migueldf10"
+  },
+  "homepage": "https://github.com/migueldf10",
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "11.1.5",
+    "@rollup/pluginutils": "^5.0.5",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/lodash-es": "4.17.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^2.2.0",
+    "@vitest/coverage-c8": "^0.25.2",
+    "cross-env": "7.0.3",
+    "file-loader": "6.1.0",
+    "husky": "^8.0.2",
+    "jest-environment-jsdom": "^29.3.1",
+    "lint-staged": "^13.1.0",
+    "lodash-es": "4.17.21",
+    "prettier": "2.8.1",
+    "rimraf": "3.0.2",
+    "rollup": "4.1.4",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-preserve-directives": "^0.4.0",
+    "rollup-plugin-visualizer": "4.2.0",
+    "ts-loader": "8.0.7",
+    "tslib": "2.4.1",
+    "typescript": "4.8.4",
+    "vite": "^3.2.3",
+    "vite-tsconfig-paths": "^3.5.2",
+    "vitest": "^1.5",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "peerDependencies": {
+    "next": "^14.2.5",
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
+  },
+  "overrides": {
+    "@testing-library/react-hooks": {
+      "@types/react": ">17",
+      "react": ">17",
+      "react-dom": ">17"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{md,html}": "prettier --write"
+  },
+  "dependencies": {
+    "cookies-next": "^4.2.1",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=16 < 19"
+  }
+}
