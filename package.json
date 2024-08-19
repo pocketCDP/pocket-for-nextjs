@@ -1,9 +1,8 @@
 {
   "name": "@pocketcdp/pocket-for-nextjs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "pocketCDP Nextjs Utility",
   "main": "dist/index.js",
-  "module": "dist",
   "files": [
     "dist",
     "README.md"
