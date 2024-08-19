@@ -15,9 +15,9 @@ const config = [
     },
     output: [
       {
-        dir: pkg.module,
-        format: "esm",
-        sourcemap: true,
+        dir: pkg.outputDir,
+        format: "es",
+        sourcemap: "inline",
         preserveModules: true,
         preserveModulesRoot: "src",
       },
